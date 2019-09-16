@@ -13,7 +13,7 @@ function Introduction() {
           ...prevState,
           seconds: prevState.seconds + 1,
           textIndex: (function(){
-            let shouldUpdate = (prevState.seconds % 5) === 0 && prevState.seconds !== 0;
+            let shouldUpdate = (prevState.seconds % 3) === 0 && prevState.seconds !== 0;
             if(shouldUpdate){
               if(prevState.textIndex === 3){
                 return 0
@@ -34,11 +34,11 @@ function Introduction() {
     let text = [
           " software engineering intern at Disney 👨🏻‍💻",
           " wannabe astronaut 👨🏼‍🚀 ",
-          " former machine learning intern 🤖",
-          " recreational rockclimber 🧗🏻‍♂️",
+          " front-end engineer the University of Iowa 🐥",
+          " recreational rockclimber 🧗🏻‍"
         ],
-      //currText = text[state.textIndex];
-      currText = text[0];
+      currText = text[state.textIndex];
+      //currText = text[0];
     return (currText);
   };
 
@@ -53,14 +53,14 @@ function Introduction() {
              &nbsp; I'm Zach Macke
         </h1>
         <div className="subhead-container">
-          <div className={'a a-text-settings'}>
+          <div className='a-text-settings'>
             <p className="ptag">a</p>
           </div>
 
           <div className={'rotate text-settings'}>
-            <span className="bracket-left">&#91;&nbsp;</span>
+            <span className="bracket">&#91;&nbsp;</span>
             <p className="rotate-ptag">{changeText()}</p>
-            <span className="bracket-right">&nbsp;&#93;</span>
+            <span className="bracket">&nbsp;&#93;</span>
           </div>
 
         </div>

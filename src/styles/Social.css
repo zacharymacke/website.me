@@ -5,3 +5,21 @@
   border-top: 1px solid #cbcbcb;
 }
 
+.social-list {
+  list-style-type: none;
+  display: table;
+  margin: 0 auto;
+  padding: 0;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.social-list-elem{
+  display: table-cell;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+svg:hover path { 
+    fill: #000000;
+}
