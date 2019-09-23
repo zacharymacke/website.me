@@ -32,9 +32,9 @@ function Introduction() {
 
   const changeText = () =>{
     let text = [
-          " software engineering intern at Disney 👨🏻‍💻",
+          " front-end s.e. intern at Disney 👨🏻‍💻",
           " wannabe astronaut 👨🏼‍🚀 ",
-          " front-end engineer the University of Iowa 🐥",
+          " software engineer @ U. Iowa 🐥",
           " recreational rockclimber 🧗🏻‍"
         ],
       currText = text[state.textIndex];
@@ -46,23 +46,25 @@ function Introduction() {
     <div className={Styles.base}>
 
       <div className="introduction">
-        <h1 className="name">Hey!&nbsp;&nbsp;
-          <span role="img" aria-label="hello">
-            👋🏻
-          </span>
-             &nbsp; I'm Zach Macke
-        </h1>
+        <div className="name-container">
+          <h1 className="wave">Hey!&nbsp;&nbsp;
+            <span role="img" aria-label="hello">
+              👋🏻
+            </span>
+          </h1>
+          <h1 className="name">
+             &nbsp; I'm Zach
+          </h1>
+        </div>
         <div className="subhead-container">
           <div className='a-text-settings'>
             <p className="ptag">a</p>
           </div>
-
           <div className={'rotate text-settings'}>
             <span className="bracket">&#91;&nbsp;</span>
             <p className="rotate-ptag">{changeText()}</p>
             <span className="bracket">&nbsp;&#93;</span>
           </div>
-
         </div>
       </div>
     </div>
