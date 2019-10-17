@@ -1,5 +1,5 @@
-// greater than 600
-@media screen and (min-width:600px) {
+// greater than 480
+@media screen and (min-width:480px) {
   p {
     float: left;
     margin: 0 auto;
@@ -60,8 +60,8 @@
 }
 
 
-// smaller than 600
-@media screen and (max-width:600px) {
+// smaller than 480
+@media screen and (max-width:480px) {
   p {
     float: left;
     margin: 0 auto;
@@ -87,6 +87,7 @@
     display: table;
     height: auto;
     padding-bottom: 90px;
+    padding-left: 14px;
   }
   
   .text-settings{
@@ -97,7 +98,7 @@
   
   .a-text-settings{
     font-size: 25px;
-    display: table-cell;
+    display: none;
     margin: 0 auto;
   }
   

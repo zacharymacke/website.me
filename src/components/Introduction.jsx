@@ -32,7 +32,7 @@ function Introduction() {
 
   const changeText = () =>{
     let text = [
-          " front-end s.e. intern at Disney 👨🏻‍💻",
+          " software eng intern at Disney 👨🏻‍💻",
           " wannabe astronaut 👨🏼‍🚀 ",
           " software engineer @ U. Iowa 🐥",
           " recreational rockclimber 🧗🏻‍"
