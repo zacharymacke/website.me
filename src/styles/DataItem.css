@@ -1,0 +1,46 @@
+.inline{
+  display: inline-block;
+  margin-right: 40px;
+  vertical-align: middle;
+}
+
+.data-container{
+  margin: 0 auto;
+  padding: 50px 0; 
+}
+
+.data-image{
+  height: 75px;
+}
+
+.data-info{
+  display: inline-block;
+  height: 90px;
+  vertical-align: middle;
+}
+
+.data-heading:hover{
+  transition: all .15s ease-out;
+  border-bottom: 1px solid transparent;
+  display: inline-block;
+}
+
+.data-heading {
+    transition: all 0.15s ease-out;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    display: inline-block;
+}
+
+.data-heading:hover {
+  border-bottom-color: #AEAEAE;
+}
+
+.data-heading {
+    margin: 4px 0;
+    color: inherit;
+}
+
+.data-sub-heading {
+    margin: 4px 0;
+    color: inherit;
+}

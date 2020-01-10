@@ -43,7 +43,7 @@ function Introduction() {
   };
 
   return (
-    <div className={Styles.base}>
+    <div className="intro-container">
 
       <div className="introduction">
         <div className="name-container">
