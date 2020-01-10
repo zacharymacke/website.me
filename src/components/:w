@@ -44,28 +44,28 @@ function App() {
           component={[
                       <DataItem 
                         dataTitle="Website.me" 
-                        description=" Personal website / portfolio 👨🏻‍💻" 
+                        description=" My personal portfolio site 🧑🏻‍💻 ." 
                         languages={["Javascript", "CSS", "HTML"]}
                         frameworks={["React", "Sass"]}
-                        website="https://github.com/zacharymacke/website.me"
+                        website="https://github.com/zacharymacke/Rocket-Pomodoro"
                       />,
                       <DataItem 
                         dataTitle="Rocket Pomodoro" 
-                        description=" Rocket themed pomodoro timer. 🚀👨🏼‍🚀" 
+                        description=" Rocket themed pomodoro timer 🚀👨🏼‍🚀." 
                         languages={["Javascript", "CSS", "HTML"]}
                         frameworks={["Sass"]}
                         website="https://github.com/zacharymacke/Rocket-Pomodoro"
                       />,
                       <DataItem
                         dataTitle="Finger Game" 
-                        description=" Hack ISU 2018 project / game that utilizes self-trained object detection. 🖐️"
+                        description=" Hack ISU 2018 project / game that utilizes self-trained object detection. "
                         languages={["Python", "Javascript", "HTML", "CSS"]}
                         frameworks={["Bulma", "Flask", "PyTorch"]}
                         website="https://github.com/zacharymacke/finger-game"
                       />,
                       <DataItem
                         dataTitle="Stackbot" 
-                        description=" NLP chat-bot which responds with the highest rated Stack Overflow answer to input questions. 🤖"
+                        description=" NLP chat-bot which responds with the highest rated Stack Overflow answer to input questions. "
                         languages={["Python"]}
                         frameworks={["Gensim"]}
                         website="https://github.com/zacharymacke/Stackbot"

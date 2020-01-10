@@ -3,11 +3,13 @@ import PropTypes from 'prop-types';
 import Styles from '../styles/Section.css';
 import DataItem from "./DataItem"
 
+var arr, 
+    renderedOutput;
 
 function Section(props) {
 
-  var arr = props.component;
-  var renderedOutput = arr.map(item => <div className="data-item"> {item} </div>)
+  arr = props.component;
+  renderedOutput = arr.map(item => <div className="data-item"> {item} </div>)
 
 
   return (

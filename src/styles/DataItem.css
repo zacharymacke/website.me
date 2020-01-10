@@ -44,3 +44,19 @@
     margin: 4px 0;
     color: inherit;
 }
+
+.project {
+  display: inline;
+  color: #7988FF
+}
+
+.tech {
+  display: block;
+}
+
+.string-accent{
+  /*
+  color: #01BEA2;
+  */
+  color: #7988FF
+}
