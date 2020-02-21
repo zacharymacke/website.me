@@ -30,7 +30,7 @@ function Introduction() {
     return () => clearInterval(interval);
   }, [setState]);
 
-  const changeText = () =>{
+  const changeText = () => {
     let text = [
           " software eng intern at Disney 👨🏻‍💻",
           " wannabe astronaut 👨🏼‍🚀 ",
@@ -47,18 +47,11 @@ function Introduction() {
 
       <div className="introduction">
         <div className="name-container">
-          <h1 className="wave">Hey!&nbsp;&nbsp;
-            <span role="img" aria-label="hello">
-              👋🏻
-            </span>
-          </h1>
-          <h1 className="name">
-             &nbsp; I'm Zach
-          </h1>
+          <h1 className="wave">Hey! 👋🏻 I'm Zach Macke</h1>
         </div>
-        <div className="subhead-container">
+        <div className="subhead-container regular-text">
           <div className='a-text-settings'>
-            <p className="ptag">a</p>
+            <p>a</p>
           </div>
           <div className={'rotate text-settings'}>
             <span className="bracket">&#91;&nbsp;</span>
@@ -66,6 +59,11 @@ function Introduction() {
             <span className="bracket">&nbsp;&#93;</span>
           </div>
         </div>
+        <div className="two-button">
+          <button className="lrg-btn-green">Resume</button>
+          <button className="lrg-btn-red">About</button>
+        </div>
+
       </div>
     </div>
   );

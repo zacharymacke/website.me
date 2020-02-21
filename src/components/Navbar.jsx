@@ -1,19 +1,20 @@
 import React from 'react';
-import styles from '../styles/Navbar.css';
+import styles from '../styles/Navbar.scss';
 
 
 function Navbar() {
   return (
-    <div className={styles.base}>
-      <nav>
-        <ul className="nav-list">
-          <li className="nav-list__item"><button>Home</button></li>
-          <li className="nav-list__item"><button>About</button></li>
-          <li className="nav-list__item"><button>Work</button></li>
-          <li className="nav-list__item"><button>Blog</button></li>
-        </ul>
+
+    <React.Fragment>
+      <nav className="desk-nav">
+        <div className="desk-nav-list">
+          <a className="desk-nav-list__item" href="/">Home</a>
+          <a className="desk-nav-list__item" href="/experience">Experience</a>
+          <a className="desk-nav-list__item" href="/projects">Projects</a>
+          <a className="desk-nav-list__item" href="/about">About</a>
+        </div>
       </nav>
-    </div>
+    </React.Fragment>
   );
 }
 

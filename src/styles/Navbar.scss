@@ -1,0 +1,40 @@
+@import './color.scss';
+
+.desk-nav {
+  .desk-nav-list {
+    margin: 0 auto;
+    max-width: 800px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+  }
+  
+  .desk-nav-list__item {
+    display: flex;
+    width: 200px;
+    margin: 0 auto;
+    justify-content: center;
+
+    color: $light-grey;
+    text-decoration: none;
+    transition: 0.3s ease-out;
+
+    &:hover {
+        color: $black;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .nav{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+    .desk-nav {
+      display: none;
+    }
+}
+

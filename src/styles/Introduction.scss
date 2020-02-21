@@ -1,128 +1,156 @@
+@import './color.scss';
+
 .intro-container {
   text-align: center;
-}
-// greater than 480
-@media screen and (min-width:480px) {
-  p {
-    float: left;
-    margin: 0 auto;
-    margin-top: 10px;
-    height: 60px;
-  }
 
-  .name-container{
-    display: table;
-  }
-  
-  .name {
-    display: table-cell;
-    font-size: 56px;
-    padding-top: 70px;
-    margin: 0 auto;
-  }
-
-  .wave {
-    display: table-cell;
-    font-size: 56px;
-    padding-top: 70px;
-    margin: 0 auto;
-  }
-  
-  .subhead-container{
-    display: table;
-    height: auto;
-    padding-bottom: 90px;
-  }
-  
-  .text-settings{
-    font-size: 22px;
-    margin: 0 auto;
-    padding-left: 10px;
-  }
-  
-  .a-text-settings{
-    font-size: 25px;
-    display: table-cell;
-    margin: 0 auto;
-  }
-  
-  .rotate-ptag {
-    height: 60px;
-  }
-  
-  .introduction {
+  .introduction{
     display: inline-block;
-  }
-  
-  .bracket{
-    float: left;
-    margin: 0 auto;
-    height: 60px;
-    margin-top: 10px;
+
+    .name-container{
+      display: flex;
+      margin: 0 auto;
+      font-size: 20px;
+
+      .wave{
+        margin-bottom: 15px;
+      }
+
+      .name{
+        margin-bottom: 15px;
+      }
+    }
+
+    .subhead-container{
+      display: table;
+      height: auto;
+      padding-bottom: 30px;
+
+      .text-settings{
+        font-size: 22px;
+        margin: 0 auto;
+        padding-left: 10px;
+
+        .bracket{
+          float: left;
+          margin: 0 auto;
+          height: 60px;
+          margin-top: 10px;
+        }
+
+        .rotate-ptag {
+          height: 60px;
+        }
+      }
+      
+      .a-text-settings{
+        font-size: 25px;
+        display: table-cell;
+        margin: 0 auto;
+      }
+    }
+    .two-button{
+      padding-top: 30px;
+      padding-bottom: 60px;
+
+      .lrg-btn-green{
+        margin: 0, auto;
+        margin-left: 30px;
+        margin-right: 30px;
+        outline:none;
+        height: 60px;
+        text-align: center;
+        width: 160px;
+        border-radius:40px;
+        background: #fff;
+        border: 2px solid $accent-blue;
+        color:$accent-blue;
+        letter-spacing:1px;
+        text-shadow:0;
+        font:{
+          size:12px;
+          weight:bold;
+        }
+        cursor: pointer;
+        transition: all 0.25s ease;
+        &:hover {
+          color:white;
+          background: $accent-blue;
+        }
+        &:active {
+          //letter-spacing: 2px;
+          letter-spacing: 2px ;
+        }
+      }
+
+      .lrg-btn-red{
+        margin: 0, auto;
+        margin-left: 30px;
+        margin-right: 30px;
+        outline:none;
+        height: 60px;
+        text-align: center;
+        width: 160px;
+        border-radius:40px;
+        background: #fff;
+        border: 2px solid $purple;
+        color:$purple;
+        letter-spacing:1px;
+        text-shadow:0;
+        font:{
+          size:12px;
+          weight:bold;
+        }
+        cursor: pointer;
+        transition: all 0.25s ease;
+        &:hover {
+          color:white;
+          background: $purple;
+        }
+        &:active {
+          //letter-spacing: 2px;
+          letter-spacing: 2px ;
+        }
+      }
+    }
+
+    p {
+      float: left;
+      margin: 0 auto;
+      margin-top: 10px;
+      height: 60px;
+    }
   }
 }
 
+@media screen and (max-width: 600px) {
+  .intro-container .introduction{
 
-// smaller than 480
-@media screen and (max-width:480px) {
-  p {
-    float: left;
-    margin: 0 auto;
-    margin-top: 10px;
-    height: 60px;
-  }
-  
-  .name {
-    display: table-row;
-    font-size: 56px;
-    padding-top: 40px;
-    margin: 0 auto;
-  }
+    .name-container {
+      padding-top: 20px;
 
-  .wave {
-    display: table-row;
-    font-size: 56px;
-    padding-top: 70px;
-    margin: 0 auto;
-  }
-  
-  .subhead-container{
-    display: table;
-    height: auto;
-    padding-bottom: 90px;
-    padding-left: 14px;
-  }
-  
-  .text-settings{
-    font-size: 22px;
-    margin: 0 auto;
-    padding-left: 10px;
-  }
-  
-  .a-text-settings{
-    font-size: 25px;
-    display: none;
-    margin: 0 auto;
-  }
-  
-  .rotate-ptag {
-    height: 60px;
-  }
-  
-  .introduction {
-    display: inline-block;
-    width: 95%;
-    padding-top: 40px;
-  }
-  
-  .bracket{
-    float: left;
-    margin: 0 auto;
-    height: 60px;
-    margin-top: 10px;
-  }
-  
-  body{
-    min-width: 600px;
+      .wave {
+        margin-top: 40px;
+      }
+    }
+
+    .two-button {
+      padding-top: 10px;
+
+      .lrg-btn-red{
+        margin-top: 40px;
+      }
+    }
+
+    .subhead-container{
+      display: inline-block;
+      padding-bottom: 0px;
+
+      .a-text-settings{
+        display: none; 
+      }
+    }
+
+
   }
 }
+

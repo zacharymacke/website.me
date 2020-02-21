@@ -1,31 +1,34 @@
 import React from 'react';
 import '../styles/App.css';
-import Navbar from './Navbar';
-import Introduction from './Introduction';
-import Social from './Social';
-import DataItem from './DataItem';
-import Section from './Section';
+import Navbar from '../components/Navbar';
+import Introduction from '../components/Introduction';
+import Social from '../components/Social';
+import DataItem from '../components/DataItem';
+import Section from '../components/Section';
 import disneyLogo from '../assests/disneyLogo.png';
 import iowaLogo from '../assests/iowaLogo.png';
 import collinsLogo from '../assests/collinsLogo.png';
 
 
-function App() {
+function HomePage() {
   return (
     <div className="App">
-      <div className="landing">
-        <Navbar />
-        <Introduction />
-        <Social />
+      <div className="page">
+        <div className="landing">
+          <Navbar />
+          <Introduction />
+          <Social />
+        </div>
         <Section 
-          name="Experience."
+          name="Experience"
+          link="/experience"
           component={[<DataItem 
                         dataTitle="The Walt Disney Company - ESPN" 
                         website="https://Disney.com"
                         dataImage={disneyLogo} 
                         description="Front-End Software Engineering Intern: May 2019 to Aug. 2019"
                       />,
-                      <DataItem
+                     <DataItem
                         dataTitle="The University of Iowa" 
                         website="https://uiowa.edu"
                         dataImage={iowaLogo} 
@@ -40,7 +43,8 @@ function App() {
           ]}
         />
         <Section 
-          name="Projects."
+          name="Projects"
+          link="/projects"
           component={[
                       <DataItem 
                         dataTitle="Website.me" 
@@ -65,7 +69,7 @@ function App() {
                       />,
                       <DataItem
                         dataTitle="Stackbot" 
-                        description=" NLP chat-bot which responds with the highest rated Stack Overflow answer to input questions. 🤖"
+                        description=" NLP chat-bot that responds with best Stack Overflow answers to input question. 🤖"
                         languages={["Python"]}
                         frameworks={["Gensim"]}
                         website="https://github.com/zacharymacke/Stackbot"
@@ -77,4 +81,4 @@ function App() {
   );
 }
 
-export default App;
+export default HomePage;
