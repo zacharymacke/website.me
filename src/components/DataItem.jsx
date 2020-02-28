@@ -9,7 +9,7 @@ var isImg,
     frameArr,
     isFramework,
     renderedLang,
-    renderedFrame,
+    renderedFrame;
 
 function DataItem(props) {
   isImg =       props.dataImage;
