@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Styles from '../styles/ExpandedSection.scss';
-import ExpandedDataItem from "./ExpandedDataItem"
 
 var arr, 
     renderedOutput; 

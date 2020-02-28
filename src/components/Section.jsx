@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Styles from '../styles/Section.scss';
-import DataItem from "./DataItem"
 import { Link } from 'react-router-dom'
 
 var arr, 

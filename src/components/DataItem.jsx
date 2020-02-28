@@ -10,7 +10,6 @@ var isImg,
     isFramework,
     renderedLang,
     renderedFrame,
-    isDesktop;
 
 function DataItem(props) {
   isImg =       props.dataImage;
