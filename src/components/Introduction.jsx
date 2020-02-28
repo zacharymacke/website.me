@@ -1,10 +1,16 @@
 import React, {useState, useEffect} from 'react';
 import Styles from '../styles/Introduction.scss';
+import { Link } from 'react-router-dom'
+import Pdf from "../assests/MackeResume.pdf";
 
 
-function Introduction() {
+var redirect;
+
+function Introduction(props) {
   const INITIAL_STATE = {seconds: 0, textIndex: 0};
   const [state, setState] = useState(INITIAL_STATE);
+
+  redirect = props.link;
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -60,8 +66,12 @@ function Introduction() {
           </div>
         </div>
         <div className="two-button">
-          <button className="lrg-btn-green">Resume</button>
-          <button className="lrg-btn-red">About</button>
+          <a target="_blank" rel="noopener noreferrer" href={Pdf}>
+            <button className="lrg-btn-green">Resume</button>
+          </a>
+          <Link to={redirect}>
+            <button className="lrg-btn-red">About</button>
+          </Link>
         </div>
 
       </div>

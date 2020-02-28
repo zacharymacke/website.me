@@ -76,7 +76,7 @@ function DataItem(props) {
 
     (isAbout ? 
       <React.Fragment>
-        <div className="expanded-item-contents">
+        <div className="expanded-item-contents about">
           <img className={"expanded-inline-about"} src={props.dataImage} alt="supporting img" />
             <div className={"expanded-inline"}>
               <p>

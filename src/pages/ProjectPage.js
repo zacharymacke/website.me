@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/App.css';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 import ExpandedDataItem from '../components/ExpandedDataItem';
 import ExpandedSection from '../components/ExpandedSection';
 
@@ -46,6 +47,7 @@ function ProjectPage() {
                         />
                       ]}
           />
+          <Footer />
     </div>
   );
 }

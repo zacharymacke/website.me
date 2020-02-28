@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/App.css';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 import Introduction from '../components/Introduction';
 import Social from '../components/Social';
 import DataItem from '../components/DataItem';
@@ -16,7 +17,9 @@ function HomePage() {
       <div className="page">
         <div className="landing">
           <Navbar />
-          <Introduction />
+          <Introduction 
+            link="/about"
+          />
           <Social />
         </div>
         <Section 
@@ -76,6 +79,7 @@ function HomePage() {
                       />
           ]}
         />
+      <Footer />
       </div>
     </div>
   );
