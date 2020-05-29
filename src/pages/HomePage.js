@@ -7,6 +7,7 @@ import Social from '../components/Social';
 import DataItem from '../components/DataItem';
 import Section from '../components/Section';
 import disneyLogo from '../assests/disneyLogo.png';
+import schwabLogo from '../assests/schwabLogo.png';
 import iowaLogo from '../assests/iowaLogo.png';
 import collinsLogo from '../assests/collinsLogo.png';
 
@@ -25,7 +26,14 @@ function HomePage() {
         <Section 
           name="Experience"
           link="/experience"
-          component={[<DataItem 
+          component={[
+                     <DataItem 
+                        dataTitle="Charles Schwab" 
+                        website="https://schwab.com"
+                        dataImage={schwabLogo} 
+                        description="Mobile Software Engineer (NERD): June 2020"
+                      />,
+                     <DataItem 
                         dataTitle="The Walt Disney Company - ESPN" 
                         website="https://Disney.com"
                         dataImage={disneyLogo} 
@@ -35,7 +43,7 @@ function HomePage() {
                         dataTitle="The University of Iowa" 
                         website="https://uiowa.edu"
                         dataImage={iowaLogo} 
-                        description="Software Engineer (Web & Data Science): Aug. 2019 to Present"
+                        description="Software Engineer (Web & Data Science): Aug. 2019 to Apr. 2019"
                       />,
                       <DataItem
                         dataTitle="Collins Aerospace" 

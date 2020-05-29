@@ -19,9 +19,9 @@ function Introduction(props) {
           ...prevState,
           seconds: prevState.seconds + 1,
           textIndex: (function(){
-            let shouldUpdate = (prevState.seconds % 3) === 0 && prevState.seconds !== 0;
+            let shouldUpdate = (prevState.seconds % 4) === 0 && prevState.seconds !== 0;
             if(shouldUpdate){
-              if(prevState.textIndex === 3){
+              if(prevState.textIndex === 4){
                 return 0
               }else{
                 return prevState.textIndex + 1;
@@ -38,10 +38,11 @@ function Introduction(props) {
 
   const changeText = () => {
     let text = [
-          " software eng intern at Disney 👨🏻‍💻",
+          " software eng @ Charles Schwab 👨🏻‍💻",
           " wannabe astronaut 👨🏼‍🚀 ",
-          " software engineer @ U. Iowa 🐥",
-          " recreational rockclimber 🧗🏻‍"
+          " former intern at Disney 👨🏻‍💻",
+          " recreational rockclimber 🧗🏻‍",
+          " former engineer @ U. Iowa 🐥"
         ],
       currText = text[state.textIndex];
       //currText = text[0];

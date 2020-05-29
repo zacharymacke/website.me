@@ -21,6 +21,14 @@ function DataItem(props) {
 
   const description = () => {
     switch(company) {
+      case "schwab": return(
+        <React.Fragment>
+          <p>At Schwab, I am on the Mobile Development Team as a 
+              <b> Software Engineering I (NERD)</b>.
+              The position has me working with the various mobile applications on their platform working to develop and maintain new and existing features.
+          </p>
+        </React.Fragment>
+      );
       case "disney": return(
         <React.Fragment>
           <p>At Disney, I was part of the Site Development / Consumer Products team working on&nbsp;

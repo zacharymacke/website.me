@@ -5,6 +5,7 @@ import Footer from '../components/Footer';
 import ExpandedDataItem from '../components/ExpandedDataItem';
 import ExpandedSection from '../components/ExpandedSection';
 
+import schwabLogo from '../assests/schwabLogo.png';
 import disneyLogo from '../assests/disneyLogo.png';
 import iowaLogo from '../assests/iowaLogo.png';
 import collinsLogo from '../assests/collinsLogo.png';
@@ -15,7 +16,15 @@ function ExperiencePage() {
           <Navbar />
           <ExpandedSection 
             name="Experience"
-            component={[<ExpandedDataItem 
+            component={[
+                    <ExpandedDataItem 
+                      dataTitle="Charles Schwab" 
+                      company="schwab"
+                      website="https://schwab.com"
+                      dataImage={schwabLogo} 
+                      description="Mobile Software Engineer (NERD): June 2020"
+                    />,
+                    <ExpandedDataItem 
                       dataTitle="The Walt Disney Company - ESPN" 
                       company="disney"
                       website="https://Disney.com"
