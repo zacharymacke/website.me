@@ -24,7 +24,7 @@ function DataItem(props) {
       case "schwab": return(
         <React.Fragment>
           <p>At Schwab, I am on the Mobile Development Team as a 
-              <b> Software Engineering I (NERD)</b>.
+              <b> Software Engineering I </b>.
               The position has me working with the various mobile applications on their platform working to develop and maintain new and existing features.
           </p>
         </React.Fragment>

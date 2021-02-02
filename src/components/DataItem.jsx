@@ -24,7 +24,6 @@ function DataItem(props) {
    *  - Abstract this into a singular func to reduce redundancy
    */
 
-  // don't add comma after last lang
   renderedLang = langArr ? langArr.map(function(item, index, ls){
     if(index === ls.length - 1){
       return <span className="string-accent"> ' {item} ' </span>;

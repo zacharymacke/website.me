@@ -22,7 +22,7 @@ function ExperiencePage() {
                       company="schwab"
                       website="https://schwab.com"
                       dataImage={schwabLogo} 
-                      description="Mobile Software Engineer (NERD): June 2020"
+                      description="Mobile Software Engineer: June 2020"
                     />,
                     <ExpandedDataItem 
                       dataTitle="The Walt Disney Company - ESPN" 

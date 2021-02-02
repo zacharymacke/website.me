@@ -10,9 +10,6 @@ function ExpandedSection(props) {
   arr = props.component;
   renderedOutput = arr.map(item => <div className="expanded-data-item"> {item} </div>)
 
-      // <div className="section">
-      //   {renderedOutput}
-      // </div>
   return (
     <div className="expanded-section-container">
       <a href="/" className="back-button">‹ Back</a>

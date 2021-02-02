@@ -41,11 +41,10 @@ function Introduction(props) {
           " software eng @ Charles Schwab 👨🏻‍💻",
           " wannabe astronaut 👨🏼‍🚀 ",
           " former intern at Disney 👨🏻‍💻",
-          " recreational rockclimber 🧗🏻‍",
-          " former engineer @ U. Iowa 🐥"
+          " recreational golfer 🏌️ ",
+          " University Iowa alum 🐥"
         ],
       currText = text[state.textIndex];
-      //currText = text[0];
     return (currText);
   };
 

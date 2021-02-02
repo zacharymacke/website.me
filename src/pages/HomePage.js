@@ -31,7 +31,7 @@ function HomePage() {
                         dataTitle="Charles Schwab" 
                         website="https://schwab.com"
                         dataImage={schwabLogo} 
-                        description="Mobile Software Engineer (NERD): June 2020"
+                        description="Mobile Software Engineer: June 2020"
                       />,
                      <DataItem 
                         dataTitle="The Walt Disney Company - ESPN" 
