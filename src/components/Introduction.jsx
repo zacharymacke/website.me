@@ -1,8 +1,8 @@
+/* eslint-disable jsx-a11y/accessible-emoji */
 import React, {useState, useEffect} from 'react';
-import Styles from '../styles/Introduction.scss';
 import { Link } from 'react-router-dom'
 import Pdf from "../assests/MackeResume.pdf";
-
+import '../styles/Introduction.scss'
 
 var redirect;
 
@@ -36,6 +36,7 @@ function Introduction(props) {
     return () => clearInterval(interval);
   }, [setState]);
 
+  // Add jsx-a11y <Emoji /> component
   const changeText = () => {
     let text = [
           " software eng @ Charles Schwab 👨🏻‍💻",

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Styles from "../styles/ExpandedDataItem.scss";
+import "../styles/ExpandedDataItem.scss";
 
 var isImg,
     isLink,

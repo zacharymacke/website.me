@@ -1,5 +1,6 @@
+/* eslint-disable jsx-a11y/accessible-emoji */
 import React from 'react';
-import styles from '../styles/Footer.scss';
+import '../styles/Footer.scss';
 
 function Footer(){
   return (

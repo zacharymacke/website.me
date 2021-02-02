@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Styles from '../styles/ExpandedSection.scss';
+import '../styles/ExpandedSection.scss';
 
 var arr, 
     renderedOutput; 

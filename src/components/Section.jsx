@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Styles from '../styles/Section.scss';
 import { Link } from 'react-router-dom'
+import '../styles/Section.scss';
 
 var arr, 
     redirect,
