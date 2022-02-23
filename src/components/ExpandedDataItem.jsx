@@ -24,7 +24,7 @@ function DataItem(props) {
       case "schwab": return(
         <React.Fragment>
           <p>At Schwab, I am on the Mobile Development Team as a 
-              <b> Software Engineering I </b>.
+              <b> Software Engineer</b>.
               The position has me working with the various mobile applications on their platform working to develop and maintain new and existing features.
           </p>
         </React.Fragment>
@@ -88,11 +88,11 @@ function DataItem(props) {
           <img className={"expanded-inline-about"} src={props.dataImage} alt="supporting img" />
             <div className={"expanded-inline"}>
               <p>
-                I am <b>Zach</b>, I've been a Front-end Software Engineering Intern working with ReactJS and Redux to a Data Science Intern working with Machine Learning and AI.
+                I am <b>Zach</b>, a software engineer with a passion for working on high impact, large scale applications utilized by many.
               </p>
 
               <p>
-                I specialize in React and vanilla Javascript, but also have professional experience working with Python and deep learning frameworks such as Keras and Tensorflow. My passion is developing and maintaining web/consumer facing applications which are utilized by many.
+                I've done a bit of everything including mobile development, front-end development, data cleaning / analytics, scripting, and data science.
               </p>
                 <p>Some Languages / Tools I've worked with are:</p>
                 <ul>

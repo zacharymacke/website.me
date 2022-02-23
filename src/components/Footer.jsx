@@ -7,7 +7,7 @@ function Footer(){
     <div className="footer-container">
       <footer className="footer">
         <div className="link-container">
-          View website <a className="t-bold" target="_blank" rel="noopener noreferrer" href="https://github.com/zacharymacke/website.me">source on Github ❤️</a>
+          View website <a className="t-bold" target="_blank" rel="noopener noreferrer" href="https://github.com/zacharymacke/website.me">source on Github 👨🏻‍💻</a>
         </div>
       </footer>
     </div>
